@@ -36,5 +36,5 @@ jobs:
     - name: installing surge
       run: npm install -g surge
     - name: Deploying in surge
-      run: surge ./build http://matrix-gaming2.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build http://adamant-shoes.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
    
