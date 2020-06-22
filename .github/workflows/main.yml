@@ -34,7 +34,7 @@ jobs:
     - name: creating build
       run: yarn build
     - name: installing surge
-      run: install npm -g surge
+      run: npm install -g surge
     - name: Deploying in surge
       run: surge ./build http://matrix-gaming2.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
    
