@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Setup Node.js environment
-      uses: actions/setup-node@v2-beta
+      uses: actions/setup-node@1.4.2
       with:
        version: 12
     - name: GitHub Action for Yarn
@@ -36,5 +36,5 @@ jobs:
     - name: installing surge
       run: install npm -g surge
     - name: Deploying in surge
-      run: surge ./build http://matrix-gaming2.surge.sh/ --token ${{secret.SURGE_TOKEN}}
+      run: surge ./build http://matrix-gaming2.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
    
